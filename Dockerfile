@@ -13,7 +13,7 @@ WORKDIR /app
 COPY . .
 
 # Build the Go app
-RUN go build -o main -i /src/main/
+RUN go build -o main src/main.go
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
