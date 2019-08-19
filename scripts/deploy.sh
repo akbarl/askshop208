@@ -4,7 +4,7 @@ EXTERNAL_PORT=8181
 INTERNAL_PORT=8181
 echo "Building $IMAGE_NAME image"
 
-sudo docker build -f ../deployment/-t $IMAGE_NAME .
+sudo docker build -f deployment/Dockerfile -t $IMAGE_NAME .
 
 echo "Created $IMAGE_NAME successfully"
 
