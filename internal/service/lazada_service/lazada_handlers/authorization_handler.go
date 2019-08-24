@@ -52,6 +52,7 @@ func AuthenticationHandler(w http.ResponseWriter, r *http.Request) {
 	var emptyAuthResp lazada_models.AuthorizationResponse = lazada_models.AuthorizationResponse{}
 	if err != nil || emptyAuthResp == authResp {
 		log.Println("Invalid authorization code: ", err)
+		return
 	}
 
 	c.Add("authorization_info", authResp, cache.NoExpiration)
