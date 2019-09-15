@@ -13,7 +13,7 @@ WORKDIR /app
 COPY . .
 
 # Build the Go app
-RUN go build -o main app.go
+RUN go build -o main cmd/lazada_service/app.go
 
 # Expose port 8080 to the outside world
 EXPOSE 8181
