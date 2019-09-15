@@ -9,7 +9,6 @@ import (
 
 func main() {
 	r := mux.NewRouter()
-	//lazada_handlers.NewAuthorizationHandler()
 	r.HandleFunc("/auth", lazada_handlers.AuthenticationHandler)
 	r.HandleFunc("/products", lazada_handlers.ProductsHandler)
 	http.ListenAndServe(":8181", r)

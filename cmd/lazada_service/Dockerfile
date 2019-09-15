@@ -13,10 +13,10 @@ WORKDIR /app
 COPY . .
 
 # Build the Go app
-RUN go build -o main src/main.go
+RUN go build -o main app.go
 
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 8181
 
 # Command to run the executable
 CMD ["./main"]
