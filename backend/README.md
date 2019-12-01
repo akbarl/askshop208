@@ -1,1 +1,6 @@
-# askshop208
+# askshop208 - Backend side
+
+## Technical Stack
+* Golang
+* Docker
+* Gradle
