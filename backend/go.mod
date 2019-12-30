@@ -1,4 +1,4 @@
-module github.com/akbarl/askshop208
+module github.com/akbarl/askshop208/backend
 
 go 1.12
 
